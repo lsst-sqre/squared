@@ -1,0 +1,12 @@
+// base styling for html and body tags
+
+html {
+  font-size: $html-font-size;
+}
+
+body {
+  @include source-sans-regular;
+  @include font-size($body-font-size-px);
+  line-height: $body-line-height;
+  color: $body-color;
+}

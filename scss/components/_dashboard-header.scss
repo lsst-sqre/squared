@@ -1,0 +1,45 @@
+.dashboard-header {
+  margin-bottom: vertical-margin(2);
+}
+
+
+.dashboard-header__logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+
+
+.dashboard-header__handle {
+  display: block;
+  @include source-sans-bold;
+  // font-size: 1.2rem;
+  letter-spacing: 0.0625em;
+
+  a {
+    color: $lsst-dark-background;
+  }
+}
+
+
+.dashboard-header__product-name {
+  margin-bottom: 1rem;
+  @include source-sans-regular;
+  font-size: 4rem;
+  line-height: 1.05;
+}
+
+
+.dashboard-header__url {
+  display: block;
+  margin-bottom: 2rem;
+  @include source-sans-regular;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+
+.dashboard-header__link-list {
+  margin-left: 0;
+  list-style-type: none;
+}

@@ -1,0 +1,49 @@
+// typographic variables
+
+// We use 100% = 16px for the html element so that user scaling works.
+$html-font-size: 100%;
+// Only use this variable for math
+$html-font-size-px: 16px;
+
+// augmented fouth (1 / sqrt(2)) modular scale ratio
+$modular-scale-ratio: 1.414;
+
+// Body text
+// This sets the zero point for the modular scale so that modular-scale(0)
+// is $body-font-size-px
+$body-font-size-px: 18px;
+
+// Leading
+$body-line-height: 1.45;
+$header-line-height: 1.05;
+
+// Typically used to set a margin-bottom, in rem, that's a multiple of the
+// type leading.
+@function vertical-margin($factor) {
+  @return $factor * $body-font-size-px/$html-font-size-px * $body-line-height + rem;
+}
+
+// computes font-size in rem with pixel fall back.
+// pxSize input must be in pixels
+@mixin font-size($pxSize) {
+  font-size: $pxSize;
+  font-size: $pxSize / $html-font-size-px + rem;
+}
+
+// compute a size given an exponent for the modular scale
+@function modular-scale($exp) {
+  @return poly-pow($modular-scale-ratio, $exp) * $body-font-size-px;
+}
+
+// modular scale of sizes in pixels
+$font-size-b-px: modular-scale(-2);
+$font-size-a-px: modular-scale(-1);
+$font-size-0-px: modular-scale(0);
+$font-size-1-px: modular-scale(1);
+$font-size-2-px: modular-scale(2);
+$font-size-3-px: modular-scale(3);
+$font-size-4-px: modular-scale(4);
+$font-size-5-px: modular-scale(5);
+$font-size-6-px: modular-scale(6);
+
+// semantic aliases

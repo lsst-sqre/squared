@@ -1,0 +1,49 @@
+.inventory-list {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+
+.inventory-list__item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-width: thin;
+  border-top-style: solid;
+  border-top-color: lighten($logo-red, 40%);
+}
+
+
+.inventory-item__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  // needed for mobile with long edition names
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+}
+
+
+.inventory-item-header__title {
+  display: block;
+  line-height: 1.0;
+  margin-bottom: 0; // override inuitcss
+}
+
+
+.inventory-item-header__date {
+  display: block;
+  height: 1.4em;
+  margin-left: auto;  // force date to right side if wrapped (in mobile)
+}
+
+
+.inventory-item__metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.inventory-item-metadata__jira-url {
+  margin-right: 3em;
+}
