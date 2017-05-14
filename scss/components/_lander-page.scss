@@ -1,0 +1,46 @@
+// page layout for the lander project
+// https://github.com/lsst-sqre/lander
+
+
+.lander-page {
+}
+
+
+.universal-header--lander {
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 60em;
+}
+
+
+.lander-content-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  min-height: 90vh;
+  max-width: 60em;
+  margin-top: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.lander-info-item {
+  flex: 0 1 20em;
+  // background-color: lightblue;
+}
+
+
+.lander-pdf-item {
+  flex: 1;
+  // background-color: lightyellow;
+}
+
+
+.pdfobject-container {
+  height: 90vh;
+}
