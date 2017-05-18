@@ -31,6 +31,18 @@
   line-height: 1.05;
 }
 
+.lander-info-version {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+
+.lander-info-version__switcher {
+  // margin-left: auto; // always right align
+}
+
 
 .lander-info-authors {
   margin-bottom: 1rem;
