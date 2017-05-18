@@ -3,6 +3,7 @@
 
 
 .lander-page {
+  @include font-size(16px);
 }
 
 
@@ -10,7 +11,7 @@
   margin: auto;
   padding-left: 10px;
   padding-right: 10px;
-  max-width: 60em;
+  max-width: 70em;
 }
 
 
@@ -22,7 +23,7 @@
   justify-content: space-between;
   align-items: stretch;
   min-height: 90vh;
-  max-width: 60em;
+  max-width: 70em;
   margin-top: 1em;
   padding-left: 10px;
   padding-right: 10px;
@@ -32,6 +33,7 @@
 .lander-info-item {
   flex: 0 1 20em;
   // background-color: lightblue;
+  margin-right: 20px;
 }
 
 
@@ -43,4 +45,12 @@
 
 .pdfobject-container {
   height: 90vh;
+}
+
+
+// refactor this typography
+.lander-subsection-header {
+  @include source-sans-bold;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
