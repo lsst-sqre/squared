@@ -2,7 +2,7 @@
 // Based on _dashboard-header; needs refactoring for consistency
 
 .lander-info-header {
-  margin-bottom: vertical-margin(2);
+  margin-bottom: vertical-margin(1);
 }
 
 .lander-info-header__logo {
@@ -31,16 +31,16 @@
   line-height: 1.05;
 }
 
-.lander-info-version {
+
+.c-lander-btn-row {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: baseline;
+  justify-content: flex-start;
 }
 
-
-.lander-info-version__switcher {
-  // margin-left: auto; // always right align
+.c-lander-btn-row__item {
+  margin-right: 1em;
 }
 
 
