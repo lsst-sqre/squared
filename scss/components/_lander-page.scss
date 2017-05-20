@@ -15,17 +15,35 @@
 }
 
 
-.lander-content-container {
+.lander-container {
   margin: 0 auto;
+  max-width: 70em;
+  margin-top: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.lander-container--content {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: stretch;
   min-height: 90vh;
-  max-width: 70em;
+}
+
+
+.lander-container--footer {
+  padding-top: 4em;
+}
+
+
+.lander-footer {
   margin-top: 1em;
-  padding-left: 10px;
+  margin-bottom: 1em;
+  margin-left: 20em;
+  padding-left: 20px;
   padding-right: 10px;
 }
 
