@@ -1,0 +1,43 @@
+// https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+
+
+.svg-icon svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+}
+
+
+.svg-icon.svg-baseline svg {
+  bottom: -0.14em;
+  position: absolute;
+}
+
+
+.svg-icon--left {
+  margin-right: 0.5em;
+}
+
+
+// Adjustments for the jira-blue icon (it's not square)
+.svg-icon--jira {
+  width: 2.6em;  // needs to be a bit wider than expected by aspect ratio
+
+  svg {
+    width: 2.574052813em;  // viewBox: 448.4 wide 174.2 high
+  }
+}
+
+
+.svg-icon--jira.svg-baseline svg {
+  bottom: -0.06em;
+  position: absolute;
+}

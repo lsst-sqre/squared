@@ -1,0 +1,12 @@
+// Link components (non-default styles)
+
+a.hidden-link {
+  // undo default <a> style
+  box-shadow: unset !important;
+  border-bottom: unset !important;
+}
+
+
+a.hidden-link--no-hover {
+  background: unset !important;
+}

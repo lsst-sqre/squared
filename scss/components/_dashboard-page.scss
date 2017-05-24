@@ -1,0 +1,16 @@
+.dashboard-page {
+  // for flexbox sticky footer
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+.dashboard-container {
+  flex: 1;  // for sticky footer; makes content fill space
+  margin: auto;
+  margin-bottom: 2em;
+  padding-left: $screen-edge-padding;
+  padding-right: $screen-edge-padding;
+  max-width: $content-max-width;
+}

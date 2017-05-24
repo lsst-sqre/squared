@@ -1,0 +1,10 @@
+.dashboard-section {
+  margin-top: 0;
+  margin-bottom: vertical-margin(2);
+}
+
+.dashboard-section__title {
+  @include source-sans-bold;
+  @include font-size($font-size-2-px);
+  margin-bottom: vertical-margin(1);
+}

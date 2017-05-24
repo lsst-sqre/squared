@@ -1,0 +1,11 @@
+@mixin source-sans-regular {
+  font-family: 'source-sans-pro', 'Helvetica Neue', 'Helvetica', 'Verdana';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin source-sans-bold {
+  font-family: 'source-sans-pro', 'Helvetica Neue', 'Helvetica', 'Verdana';
+  font-weight: 700;
+  font-style: normal;
+}

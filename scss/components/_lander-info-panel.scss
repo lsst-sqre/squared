@@ -1,0 +1,49 @@
+// Info panel for the lander project
+// Based on _dashboard-header; needs refactoring for consistency
+
+.lander-info-header {
+  margin-bottom: vertical-margin(1);
+}
+
+.lander-info-header__logo {
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+
+
+.lander-info-header__handle {
+  display: block;
+  @include source-sans-bold;
+  // font-size: 1.2rem;
+  font-size: 1rem;
+  letter-spacing: 0.0625em;
+
+  a {
+    color: $lsst-dark-background;
+  }
+}
+
+
+.lander-info-header__product-name {
+  margin-bottom: 1rem;
+  @include source-sans-regular;
+  font-size: 2rem;  // smaller than in dashboard-header
+  line-height: 1.05;
+}
+
+
+.c-lander-btn-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.c-lander-btn-row__item {
+  margin-right: 1em;
+}
+
+
+.lander-info-authors {
+  margin-bottom: 1rem;
+}
