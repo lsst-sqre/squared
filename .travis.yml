@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - '7'
+install:
+  - "npm install"
+script:
+  - "npm run test"
+deploy:
+  provider: npm
+  email: jsick@lsst.org
+  api_key:
+    secure: Y2p+EccyLuV7Fz+S9bwS2wjy7zzSFZ6+DI85PZbIydgBjV7iffd6McM3VHNoU75q3sKWWhqO6AXX8lp+9oDk6wchf6cJWnzfnK9D+2h6pzGzmQuVBZdJstqSMYtLghCE/fY5Ac+13mjsrpz7JbpDDR0WC2MVMES46SSi4e1rZfAGd4I4nakFxQoH0cJCKsruUI+bTVxmdDaWaPbEHDxlKJyqNDKcZhfXDxCQftQqStPOhQrXyt0lNnQu5UAEH6Q3TD9HErr6SAcX3B0QrtBc3+t9Cgo2kH5W+RXHgjNY6Tcez+3fTrvuvgBuwoobra0NVNuFOvaPEAH1Pcfya1CohvtIFo/wvYJRGTmZaOPk13PZ6BQcTgQfWE38P0vPnAQ8Wq2nv4FhN7lok7Rs3xxs4qVZ9rRC3Do8MD7jDI8isSIbsMCBynPQ9bwlmvbEXxXAdmrqe6n3HVAyfMUYohJa0wMJY8MdhuERsEOqniYgdyipoNL9EmIvB+uvCns2N6WCNJ98KGAmPj9YX6yIbcG5utC5+1w586w6yQOYUcXzIwZKopzKer/8hYt271HacXzXHo+9fF5b3iRvzb8Ua46Ok5AWn457kseYA7CzqCK+NjQsssbX0Spb+gsPjWDk1Mkqbf9pz+maif+5v84RiQB5Nx2NHujIwLabw6ari/D6B2c=
+  on:
+    tags: true
+    repo: lsst-sqre/squared
+  cleanup: false
